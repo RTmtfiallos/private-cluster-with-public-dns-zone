@@ -1,0 +1,334 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "Central US"
+    },
+    "aksClusterName": {
+      "value": "ABCDS-AKS-Dev"
+    },
+    "aksClusterDnsPrefix": {
+      "value": "ABCDS-AKS-Dev"
+    },
+    "aksClusterTags": {
+      "value": {
+        "Domain": "General"
+      }
+    },
+    "aksClusterNetworkPlugin": {
+      "value": "azure"
+    },
+    "aksClusterNetworkPolicy": {
+      "value": "azure"
+    },
+    "aksClusterPodCidr": {
+      "value": "10.27.0.0/16"
+    },
+    "aksClusterServiceCidr": {
+      "value": "10.26.0.0/16"
+    },
+    "aksClusterDnsServiceIP": {
+      "value": "10.26.0.100"
+    },
+    "aksClusterDockerBridgeCidr": {
+      "value": "10.28.0.0/16"
+    },
+    "aksClusterLoadBalancerSku": {
+      "value": "standard"
+    },
+    "aksClusterOutboundType": {
+      "value": "loadBalancer"
+    },
+    "aksClusterSkuTier": {
+      "value": "Paid"
+    },
+    "aksClusterKubernetesVersion": {
+      "value": "1.20.9"
+    },
+    "aksClusterAdminUsername": {
+      "value": "AKSAdmin"
+    },
+    "aksClusterSshPublicKey": {
+      "value": null
+    },
+    "aadProfileTenantId": {
+      "value": "106b471d-4ca9-4657-b2a5-b0fe31f45415"
+    },
+    "aadProfileAdminGroupObjectIDs": {
+      "value": [
+        "1535308b-9d1c-4172-9b7e-9127216db74d"
+      ]
+    },
+    "aksUpgradeChannel": {
+      "value": "stable"
+    },
+    "aksClusterEnablePrivateCluster": {
+      "value": true
+    },
+    "aksPrivateDNSZone": {
+      "value": "none"
+    },
+    "aksEnablePrivateClusterPublicFQDN": {
+      "value": true
+    },
+    "aadProfileManaged": {
+      "value": true
+    },
+    "aadProfileEnableAzureRBAC": {
+      "value": true
+    },
+    "systemNodePoolName": {
+      "value": "systempool"
+    },
+    "systemNodePoolVmSize": {
+      "value": "Standard_E16d_v4"
+    },
+    "systemNodePoolOsDiskSizeGB": {
+      "value": 150
+    },
+    "systemNodePoolOsDiskType": {
+      "value": "Managed"
+    },
+    "systemNodePoolAgentCount": {
+      "value": 3
+    },
+    "systemNodePoolOsType": {
+      "value": "Linux"
+    },
+    "systemNodePoolMaxPods": {
+      "value": 30
+    },
+    "systemNodePoolMaxCount": {
+      "value": 5
+    },
+    "systemNodePoolMinCount": {
+      "value": 3
+    },
+    "systemNodePoolEnableAutoScaling": {
+      "value": true
+    },
+    "systemNodePoolScaleSetPriority": {
+      "value": "Regular"
+    },
+    "systemNodePoolScaleSetEvictionPolicy": {
+      "value": "Delete"
+    },
+    "systemNodePoolNodeLabels": {
+      "value": {
+        "Node": "system"
+      }
+    },
+    "systemNodePoolNodeTaints": {
+      "value": "[]"
+    },
+    "systemNodePoolType": {
+      "value": "VirtualMachineScaleSets"
+    },
+    "systemNodePoolAvailabilityZones": {
+      "value": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "userNodePoolName": {
+      "value": "userpool"
+    },
+    "userNodePoolVmSize": {
+      "value": "Standard_E16d_v4"
+    },
+    "userNodePoolOsDiskSizeGB": {
+      "value": 150
+    },
+    "userNodePoolOsDiskType": {
+      "value": "Managed"
+    },
+    "userNodePoolAgentCount": {
+      "value": 3
+    },
+    "userNodePoolOsType": {
+      "value": "Linux"
+    },
+    "userNodePoolMaxPods": {
+      "value": 30
+    },
+    "userNodePoolMaxCount": {
+      "value": 3
+    },
+    "userNodePoolMinCount": {
+      "value": 1
+    },
+    "userNodePoolEnableAutoScaling": {
+      "value": true
+    },
+    "userNodePoolScaleSetPriority": {
+      "value": "Regular"
+    },
+    "userNodePoolScaleSetEvictionPolicy": {
+      "value": "Delete"
+    },
+    "userNodePoolNodeLabels": {
+      "value": {
+        "Node": "Dremio"
+      }
+    },
+    "userNodePoolNodeTaints": {
+      "value": "[]"
+    },
+    "userNodePoolType": {
+      "value": "VirtualMachineScaleSets"
+    },
+    "userNodePoolAvailabilityZones": {
+      "value": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "httpApplicationRoutingEnabled": {
+      "value": null
+    },
+    "aciConnectorLinuxEnabled": {
+      "value": null
+    },
+    "azurePolicyEnabled": {
+      "value": true
+    },
+    "kubeDashboardEnabled": {
+      "value": null
+    },
+    "podIdentityProfileEnabled": {
+      "value": true
+    },
+    "autoScalerProfileScanInterval": {
+      "value": "10s"
+    },
+    "autoScalerProfileScaleDownDelayAfterAdd": {
+      "value": "10m"
+    },
+    "autoScalerProfileScaleDownDelayAfterDelete": {
+      "value": "20s"
+    },
+    "autoScalerProfileScaleDownDelayAfterFailure": {
+      "value": "3m"
+    },
+    "autoScalerProfileScaleDownUnneededTime": {
+      "value": "10m"
+    },
+    "autoScalerProfileScaleDownUnreadyTime": {
+      "value": "20m"
+    },
+    "autoScalerProfileUtilizationThreshold": {
+      "value": "0.5"
+    },
+    "autoScalerProfileMaxGracefulTerminationSec": {
+      "value": "600"
+    },
+    "virtualNetworkName": {
+      "value": "AksVnet-Dev"
+    },
+    "virtualNetworkAddressPrefixes": {
+      "value": "10.25.0.0/16"
+    },
+    "aksSubnetName": {
+      "value": "AksSubnet-Dev"
+    },
+    "aksSubnetAddressPrefix": {
+      "value": "10.20.0.0/16"
+    },
+    "podSubnetName": {
+      "value": "PodSubnet-Dev"
+    },
+    "podSubnetAddressPrefix": {
+      "value": "10.21.0.0/16"
+    },
+    "vmSubnetName": {
+      "value": "VmSubnet-Dev"
+    },
+    "vmSubnetAddressPrefix": {
+      "value": "10.22.0.0/16"
+    },
+    "bastionSubnetAddressPrefix": {
+      "value": "10.23.0.0/16"
+    },
+    "logAnalyticsWorkspaceName": {
+      "value": "ABCDS-AKS-Dev-Workspace"
+    },
+    "logAnalyticsSku": {
+      "value": "PerNode"
+    },
+    "logAnalyticsRetentionInDays": {
+      "value": 60
+    },
+    "vmName": {
+      "value": "ABCDS-AKS-Jumpbox-Dev"
+    },
+    "vmSize": {
+      "value": "Standard_A1_v2"
+    },
+    "imagePublisher": {
+      "value": "Canonical"
+    },
+    "imageOffer": {
+      "value": "UbuntuServer"
+    },
+    "imageSku": {
+      "value": "18.04-LTS"
+    },
+    "authenticationType": {
+      "value": "sshPublicKey"
+    },
+    "vmAdminUsername": {
+      "value": "AKSAdmin"
+    },
+    "vmAdminPasswordOrKey": {
+      "value": null
+    },
+    "diskStorageAccounType": {
+      "value": "Standard_LRS"
+    },
+    "numDataDisks": {
+      "value": 1
+    },
+    "osDiskSize": {
+      "value": 50
+    },
+    "dataDiskSize": {
+      "value": 50
+    },
+    "dataDiskCaching": {
+      "value": "ReadWrite"
+    },
+    "blobStorageAccountName": {
+      "value": "abcdsaksjumpboxdev"
+    },
+    "blobStorageAccountPrivateEndpointName": {
+      "value": "abcdsaksjumpboxdev-PrivateEndpoint"
+    },
+    "acrPrivateEndpointName": {
+      "value": "ABCDS-AKS-AcrPrivateEndpoint-Dev"
+    },
+    "acrName": {
+      "value": "abcdsaksacrdev"
+    },
+    "acrAdminUserEnabled": {
+      "value": null
+    },
+    "acrSku": {
+      "value": "Premium"
+    },
+    "bastionHostName": {
+      "value": "ABCDS-AKS-Dev-Bastion"
+    },
+    "keyVaultPrivateEndpointName": {
+      "value": "ABCDS-AKS-KeyVaultPrivateEndpoint-Dev"
+    },
+    "keyVaultName": {
+      "value": "ABCDS-AKS-KV-Dev-V2"
+    },
+    "keyVaultNetworkRuleSetDefaultAction": {
+      "value": "Deny"
+    }
+  }
+}
