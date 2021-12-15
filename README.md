@@ -7,8 +7,7 @@ author: paolosalvatori
 
 This project can be used to deploy a [private AKS cluster with a Public DNS address](https://docs.microsoft.com/en-us/azure/aks/private-clusters#create-a-private-aks-cluster-with-a-public-dns-address) with [Dynamic allocation of IPs and enhanced subnet support](https://docs.microsoft.com/en-us/azure/aks/configure-azure-cni#dynamic-allocation-of-ips-and-enhanced-subnet-support-preview), [Azure Active Directory Pod Identity](https://docs.microsoft.com/en-us/azure/aks/use-azure-ad-pod-identity), and more. Instead, this [sample](https://github.com/paolosalvatori/private-aks-cluster) shows how to deploy a [private AKS cluster with a Private DNS address](https://docs.microsoft.com/en-us/azure/aks/private-clusters).
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/RTmtfiallos/private-cluster-with-public-dns-zone/main/ABCDS-AKS-Dev-Template.json
-)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRTmtfiallos%2Fprivate-cluster-with-public-dns-zone%2Fmain%2FABCDS-AKS-Dev-Template.json)
 
 ## Architecture ##
 
