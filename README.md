@@ -1,6 +1,6 @@
 ---
 services: aks, key-vault, container-registry, azure-monitor, storage, virtual-network, virtual-machines, private-link, templates
-author: paolosalvatori
+author: mfiallos
 ---
 
 # Create a Private AKS cluster with a Public DNS Zone
