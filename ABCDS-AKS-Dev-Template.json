@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.1",
   "parameters": {
     "location": {
-      "defaultValue": "[resourceGroup().location]",
+      "defaultValue": "Central US",
       "type": "string",
       "metadata": {
         "description": "Specifies the location of AKS cluster."
