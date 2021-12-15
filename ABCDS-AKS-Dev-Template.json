@@ -17,7 +17,7 @@
       }
     },
     "aksClusterDnsPrefix": {
-      "defaultValue": "[parameters('aksClusterName')]",
+      "defaultValue": "ABCDS-AKS-Dev",
       "type": "string",
       "metadata": {
         "description": "Specifies the DNS prefix specified when creating the managed cluster."
